@@ -16,7 +16,7 @@ const GeocodeForm = () => {
   const [timeOfDay, setTimeOfDay] = useState('');
   const [isLoadingLocation, setIsLoadingLocation] = useState(false);
 
-  const apiKey = '63446487c5b74453892d336d19a5d503'; // Replace with your OpenCage Data API key
+  const apiKey = ''; // Replace with your OpenCage Data API key
 
   const fetchCoordinates = async (location) => {
     const response = await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(location)}&key=${apiKey}`);
